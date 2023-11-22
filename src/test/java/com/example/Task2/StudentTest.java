@@ -4,6 +4,7 @@ import com.example.Task2.entity.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class StudentTest {
    @Test
@@ -17,7 +18,7 @@ public class StudentTest {
     }
     @Test
     public void testSetters() {
-        Student student = new Student(1, "Jaya", 20, 50000.0);
+        Student student = new Student();
 
         student.setId(2);
         student.setName("Sri");
@@ -33,7 +34,8 @@ public class StudentTest {
     @Test
     public void testToString() {
         Student student = new Student(1, "Jaya", 20, 50000.0);
- 
         assertEquals("Student [id=1, name=Jaya, age=20, salary=50000.0]", student.toString());
     }
+    
+  
 }

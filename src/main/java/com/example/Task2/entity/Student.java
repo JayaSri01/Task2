@@ -19,7 +19,11 @@ public class Student {
             this.salary = salary;
         }
 
-        public int getId() {
+    public Student() {
+
+    }
+
+    public int getId() {
             return id;
         }
 
